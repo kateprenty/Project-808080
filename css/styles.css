@@ -1,8 +1,14 @@
 h1{
   color:#b30000;
   text-align: center;
+  font-size: 64px;
 }
 
+h2{
+  color:#0059b3;
+  text-align:center;
+  font-size:44px;
+}
 p {
   color: blue;
 }
