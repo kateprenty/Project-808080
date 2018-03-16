@@ -1,10 +1,13 @@
 h1{
-  color: red;
+  color:#b30000;
+  text-align: center;
 }
 
 p {
   color: blue;
 }
+
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
