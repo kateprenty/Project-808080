@@ -12,6 +12,11 @@ h2{
   text-align: right;
   font-size:40px;
 }
+h3{
+  color:#b30000;
+  text-align: center;
+  font-size: 64px;
+}
 p {
   color: #b30000;
 }
