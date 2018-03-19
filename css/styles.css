@@ -10,7 +10,11 @@ h2{
   font-size:44px;
 }
 p {
-  color: blue;
+  color: #b30000;
+}
+
+blockquote {
+  position:
 }
 
 img {
@@ -20,7 +24,6 @@ img {
     background-repeat:   no-repeat;
     background-size:     cover;
 }
-
 
 .crop img {
  height: 400px;
