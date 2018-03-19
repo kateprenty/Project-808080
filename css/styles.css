@@ -13,6 +13,17 @@ p {
   color: blue;
 }
 
+img {
+    position: relative;
+    float: left;
+    width:  250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+
 
 * {box-sizing:border-box}
 
