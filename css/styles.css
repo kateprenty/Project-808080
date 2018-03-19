@@ -16,13 +16,16 @@ p {
 img {
     position: relative;
     float: left;
-    width:  250px;
-    height: 250px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
 }
 
+
+.crop img {
+ height: 400px;
+ width: 400px;
+}
 
 
 * {box-sizing:border-box}
