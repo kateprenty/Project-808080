@@ -13,6 +13,10 @@ p {
   color: blue;
 }
 
+blockquote{
+  position: relative;
+}
+
 img {
     position: relative;
     float: left;
