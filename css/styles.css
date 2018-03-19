@@ -33,12 +33,12 @@ img {
     float: left;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
-    background-size:     cover;
+    background-size:     contain;
 }
 
 .crop img {
- height: 400px;
- width: 400px;
+ height: 100px;
+ width: 100px;
 }
 
 
