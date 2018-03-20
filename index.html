@@ -245,6 +245,62 @@
 <br>
 <br>
 <br>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Google Maps Multiple Markers</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnoUZ4a7u9wAvUPRyfx5rgIyJ-_Ri02Wo" type="text/javascript"></script>
+
+</head>
+<body>
+  <div id="map" style="width: 500px; height: 400px;"></div>
+
+  <script type="text/javascript">
+    var locations = [
+      ['The Counter', 53.350713, -6.258723, 16],
+      ['The Counter', 53.293909, -6.244647, 15],
+      ['Wow Burger', 53.353622, -6.267528, 14],
+      ['Wow Burger', 53.347255, -6.267014, 13],
+      ['Wow Burger', 53.344539, -6.260426, 12],
+      ['Wow Burger', 53.339201, -6.265759, 11],
+      ['Wow Burger', 53.328428, -6.254935, 10],
+      ['Bunsen', 53.348405, -6.263879, 9],
+      ['Bunsen', 53.339489, -6.266283, 8],
+      ['Bunsen', 53.345024, -6.259931, 7],
+      ['Bunsen', 53.325855, -6.251348, 6],
+      ['Jo Burger', 53.348658, -6.276918, 5],
+      ['Jo Burger', 53.342663, -6.262906, 4],
+      ['BoBos''''s', 53.349630, -6.260395, 3]
+      ['BoBos''''s', 53.345275, -6.263743, 2]
+      ['BoBos''''s', 53.337742, -6.265717, 1]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(53.350713, -6.258723),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+</body>
+
 <footer class="container-fluid bg-4 text-center">
   <p> Website Created by Fifty Shades of #808080 </p>
 </footer>
