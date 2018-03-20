@@ -27,11 +27,9 @@ blockquote {
     margin-bottom: 1em;
     margin-left: 40px;
     margin-right: 40px;
+
 }
 
-blockquote{
-  position: relative;
-}
 
 img {
     position: relative;
@@ -39,6 +37,8 @@ img {
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     contain;
+    height: 250px;
+    width: 250px;
 }
 
 .crop img {
