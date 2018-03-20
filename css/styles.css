@@ -11,7 +11,7 @@ h2{
   color:#0059b3;
   text-align: right;
   font-size:40px;
-  
+
 }
 h3{
   color:#b30000;
@@ -36,7 +36,7 @@ blockquote {
 img {
     position: relative;
     float: left;
-    background-position: 50% 50%;
+  
     background-repeat:   no-repeat;
     background-size:     contain;
     height: 250px;
